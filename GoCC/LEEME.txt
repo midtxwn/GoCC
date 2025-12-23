@@ -1,0 +1,28 @@
+NOTA: Es necesario tener instalado makefile para compilar. Si no se tiene instalado, usar el comando "sudo apt install make"
+
+PARA COMPILAR:
+cd P1/ # cambiar a carpeta de proyecto
+make # ejecutar makefile
+
+
+
+PARA EJECUTAR:
+./programa nombreFichero # nombreFichero es el codigo fuente a procesar
+
+
+PARA LIMPIAR:
+cd P1/ # cambiar a carpeta de proyecto
+make clean # limpiar archivos compilados
+
+El programa consta de los siguientes modulos:
+
+ABB> Arbol binario de busqueda, adaptado a las necesidades de la practica.
+TS> tabla de simbolos usada por alexico, TS a su vez usa el modulo ABB
+alexico> codigo asociado al analizador lexico
+asyntax> codigo asociado al analizador sintactico
+definitions.h> cabecera que contiene definiciones utiles para el proyecto
+error> codigo asociado a una gestion de errores minimalista
+inputsys> sistema de entrada, usado por el analizador lexico
+main> se encarga de inicializar modulos y de llamar a la funcion parse de asyntax, que parseara el codigo.
+
+
